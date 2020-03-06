@@ -14,21 +14,21 @@ class Backpack extends React.Component<Props, State> {
   render() {
     return (
       <div>
-        <h2>Objects</h2>
-        <ul>
-          <li>{this.props.content.pokeballs} pokeballs</li>
-        </ul>
-        <button
-          className="bg-pokeblue text-white rounded"
-          onClick={() => {
-            this.props.pokeballGo();
-            this.props.done();
-          }}
-        >
-          Lancer une pokeball
-        </button>
+        <p className="flex items-center justify-between mb-2">
+          <span>pokeballs: {this.props.content.pokeballs}</span>
+          <button
+            className="bg-pokeblue text-white rounded p-1"
+            onClick={() => {
+              this.props.pokeballGo();
+              this.props.done();
+            }}
+          >
+            Lancer une pokeball
+          </button>
+        </p>
+
         <h2>Pokemons</h2>
-        <div className="grid grid-flow-row grid-cols-3 gap-2 h-64 overflow-scroll">
+        <div className="grid grid-flow-row grid-cols-3 gap-2 h-56 overflow-scroll">
           {this.props.content.pokemons.map((pokemon, key) => {
             console.log(pokemon);
             return (

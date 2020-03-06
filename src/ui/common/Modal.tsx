@@ -15,7 +15,7 @@ export default class extends React.PureComponent<Props> {
       <div className="modal z-20 fixed w-full h-full top-0 left-0 flex items-center justify-center">
         <div className="modal-overlay absolute w-full h-full bg-transparent"></div>
 
-        <div className="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        <div className="modal-container bg-white w-6/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
           {/* Add margin if you want to see some of the overlay behind the modal */}
           <div className="modal-content py-4 text-left px-6">
             {/* Title */}

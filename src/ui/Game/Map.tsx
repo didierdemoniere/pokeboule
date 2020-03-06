@@ -15,7 +15,7 @@ interface State {}
 class Map extends React.Component<Props, State> {
   render() {
     return (
-      <div>
+      <div className="flex justify-between items-center">
         <Button
           onClick={() => {
             this.props.goto("woods");
