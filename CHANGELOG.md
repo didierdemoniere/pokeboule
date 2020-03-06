@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/didierdemoniere/pokeboule/compare/v1.1.0...v1.2.0) (2020-03-06)
+
+
+### Features
+
+* **modal:** add modal component ([f5f3246](https://github.com/didierdemoniere/pokeboule/commit/f5f3246ca65d44bb5aacce6881a452a2d40ccfc9))
+* **place:** add a "woods" place ([9d75945](https://github.com/didierdemoniere/pokeboule/commit/9d759456807d985e9f3cdd60f5149f14a5646e04))
+
+
+### Bug Fixes
+
+* **modal:** fix Modal opening and closing ([581d1e3](https://github.com/didierdemoniere/pokeboule/commit/581d1e3806e3f901b03f6b619b9e0f9ca4701bcc))
+
 ## [1.1.0](https://github.com/didierdemoniere/pokeboule/compare/v1.0.0...v1.1.0) (2020-03-06)
 
 
