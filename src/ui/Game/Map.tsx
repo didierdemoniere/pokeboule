@@ -1,6 +1,10 @@
 import * as React from "react";
 
-interface Props {}
+interface Props {
+  actions: {
+    goSomeWhere: (place: "home" | "woods") => void;
+  };
+}
 
 interface State {}
 

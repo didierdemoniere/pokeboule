@@ -1,13 +1,13 @@
 import * as React from "react";
 // @ts-ignore
-import house from "../images/house.png";
+import home from "../images/home.png";
 // @ts-ignore
 import woods from "../images/woods.jpg";
 
 // we can't directly know in advance which filenames images gonna have
 // so we import thoses filenames from the parcel resolver and store them here
 const backgrounds = {
-  house,
+  home,
   woods
 };
 

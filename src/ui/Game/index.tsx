@@ -8,7 +8,7 @@ interface Props {}
 
 interface State {
   modal?: ModalProps;
-  currentPlace: "house" | "woods";
+  currentPlace: "home" | "woods";
 }
 
 /**
@@ -17,7 +17,7 @@ interface State {
 export default class extends React.Component<Props, State> {
   state: State = {
     modal: null,
-    currentPlace: "house"
+    currentPlace: "home"
   };
 
   openModal(

@@ -17,7 +17,7 @@ interface Props {
       },
       children?: React.ReactNode
     ): void;
-    goSomeWhere: (place: "house" | "woods") => void;
+    goSomeWhere: (place: "home" | "woods") => void;
   };
 }
 
@@ -47,7 +47,7 @@ export default class extends React.Component<Props, State> {
       {
         close: this.props.actions.closeModal
       },
-      <Map />
+      <Map actions={{ goSomeWhere: this.props.actions.goSomeWhere }} />
     );
   }
 
