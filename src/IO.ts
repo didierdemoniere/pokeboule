@@ -13,5 +13,10 @@ export const pokeapi = axios.create({
  * @returns a promise of a pokemon
  */
 export const getRandomPokemon = () => {
-  return pokeapi.get(`pokemon/${randomIntegerBetween(1, 151)}`);
+  return pokeapi
+    .get(`pokemon/${randomIntegerBetween(1, 151)}`)
+    .then(response => {
+      console.log(response.data);
+      return response.data;
+    });
 };
