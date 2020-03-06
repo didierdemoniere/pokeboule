@@ -9,6 +9,9 @@ interface Props {
 
 interface State {}
 
+/**
+ * Splash Screen
+ */
 export default class extends React.Component<Props, State> {
   render() {
     return (
