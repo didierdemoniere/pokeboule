@@ -3,14 +3,14 @@ import * as gameModule from "./game";
 import * as backpackModule from "./backpack";
 import * as dialogModule from "./dialog";
 import * as placeModule from "./place";
-import * as pokemonModule from "./pokemon";
+import * as encounterModule from "./encounter";
 
 export const actionCreators = {
   ...gameModule.actionCreators,
   ...backpackModule.actionCreators,
   ...placeModule.actionCreators,
   ...dialogModule.actionCreators,
-  ...pokemonModule.actionCreators
+  ...encounterModule.actionCreators
 };
 
 export const reducer = combineReducers({
@@ -18,5 +18,5 @@ export const reducer = combineReducers({
   backpack: backpackModule.reducer,
   currentPlace: placeModule.reducer,
   dialog: dialogModule.reducer,
-  displayed_pokemon: pokemonModule.reducer
+  encounter: encounterModule.reducer
 });

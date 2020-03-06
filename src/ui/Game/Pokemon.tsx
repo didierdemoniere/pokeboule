@@ -4,26 +4,34 @@ import { AppState } from "../../state-management";
 
 interface Props {
   className: string;
-  pokemon: AppState["displayed_pokemon"];
+  encounter: AppState["encounter"];
 }
 
 interface State {}
 
 class Pokemon extends React.Component<Props, State> {
   render() {
-    if (this.props.pokemon) {
-      return (
-        <img
-          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.props.pokemon.id}.png`}
-          width="300"
-          className={this.props.className}
-        />
-      );
+    if (this.props.encounter.pokemon) {
+      if (!this.props.encounter.catch) {
+        return (
+          <img
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.props.encounter.pokemon.id}.png`}
+            width="300"
+            className={this.props.className}
+          />
+        );
+      } else {
+        return (
+          <div className="pokeball">
+            <div className="pokeball__button"></div>
+          </div>
+        );
+      }
     }
     return null;
   }
 }
 
 export default connect((state: AppState) => ({
-  pokemon: state.displayed_pokemon
+  encounter: state.encounter
 }))(Pokemon);
