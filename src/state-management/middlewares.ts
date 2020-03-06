@@ -26,7 +26,7 @@ export const pokemonAppearsMiddleware = onActionTypes(
         store.dispatch({
           type: "DIALOG_NOTHING_TO_SEE_HERE",
           actions: {
-            "continuer a se ballader": {
+            "continuer de se ballader": {
               actionCreatorName: "goto",
               args: ["woods"]
             }
@@ -70,7 +70,8 @@ export const pokeballGoMiddleware = onActionTypes(
       setTimeout(() => {
         store.dispatch({ type: "SAVE_POKEMON", data: pokemon });
         store.dispatch({ type: "DIALOG_SUCCESSFUL_CATCH", data: pokemon });
-      }, 5000);
+        store.dispatch({ type: "CATCH_POKEMON_DONE" });
+      }, 4000);
     } else {
       store.dispatch({ type: "DIALOG_POKEBALL_LOST" });
     }

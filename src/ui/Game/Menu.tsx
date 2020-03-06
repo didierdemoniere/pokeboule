@@ -36,7 +36,7 @@ export default class extends React.Component<Props, State> {
       {
         close: this.props.actions.closeModal
       },
-      <Backpack />
+      <Backpack done={this.props.actions.closeModal} />
     );
   }
 

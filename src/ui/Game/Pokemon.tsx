@@ -17,12 +17,12 @@ class Pokemon extends React.Component<Props, State> {
           <img
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.props.encounter.pokemon.id}.png`}
             width="300"
-            className={this.props.className}
+            className="mt-24"
           />
         );
       } else {
         return (
-          <div className="pokeball">
+          <div className="pokeball mt-32">
             <div className="pokeball__button"></div>
           </div>
         );

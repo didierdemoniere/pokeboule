@@ -12,7 +12,7 @@ export interface Props {
 export default class extends React.PureComponent<Props> {
   render() {
     return (
-      <div className="modal fixed w-full h-full top-0 left-0 flex items-center justify-center">
+      <div className="modal z-20 fixed w-full h-full top-0 left-0 flex items-center justify-center">
         <div className="modal-overlay absolute w-full h-full bg-transparent"></div>
 
         <div className="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
