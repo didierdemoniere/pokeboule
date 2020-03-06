@@ -1,6 +1,6 @@
 {
   "name": "pokeboule",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "pikachu attaque éclair !!!",
   "scripts": {
     "dev": "parcel serve src/index.html --open",
