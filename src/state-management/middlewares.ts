@@ -15,9 +15,27 @@ export const pokemonAppearsMiddleware = onActionTypes(
           store.dispatch({ type: "DISPLAY_POKEMON", data: pokemon });
         });
       } else {
-        store.dispatch({ type: "DIALOG_NOTHING_TO_SEE_HERE" });
+        if (store.getState().displayed_pokemon) {
+          // we dispatch a DISPLAY_POKEMON action with no pokemon to hide the previous pokemon
+          // @todo refactoring
+          store.dispatch({ type: "DISPLAY_POKEMON", data: null });
+        }
+        store.dispatch({
+          type: "DIALOG_NOTHING_TO_SEE_HERE",
+          data: {
+            "continuer a se ballader": {
+              actionCreatorName: "goto",
+              args: ["woods"]
+            }
+          }
+        });
       }
     } else if (action.data === "home") {
+      if (store.getState().displayed_pokemon) {
+        // we dispatch a DISPLAY_POKEMON action with no pokemon to hide the previous pokemon
+        // @todo refactoring
+        store.dispatch({ type: "DISPLAY_POKEMON", data: null });
+      }
       store.dispatch({ type: "DIALOG_NOTHING_EXCITING" });
     }
 
