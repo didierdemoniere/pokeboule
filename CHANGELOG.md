@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/didierdemoniere/pokeboule/compare/v1.4.0...v1.5.0) (2020-03-06)
+
+
+### Features
+
+* **catch pokemon:** add catch pokement feature ([5daed7a](https://github.com/didierdemoniere/pokeboule/commit/5daed7a0b6e44aad52a4a3b5a1190e8a7bc5bc33))
+* **display captured pokemon:** display all catched pokemon in the bag ([8f092d4](https://github.com/didierdemoniere/pokeboule/commit/8f092d45feaf4192cd875233576ddf7fd5c57384))
+* **free/show details  pokemon:** add free pokemon and show details ([92ff492](https://github.com/didierdemoniere/pokeboule/commit/92ff492f18b636c244f4cfbfc387fe94f2544159))
+
 ## [1.4.0](https://github.com/didierdemoniere/pokeboule/compare/v1.3.1...v1.4.0) (2020-03-06)
 
 
