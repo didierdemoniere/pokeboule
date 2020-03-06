@@ -1,5 +1,6 @@
 import * as React from "react";
-
+import Backpack from "./Backpack";
+import Map from "./Map";
 // @ts-ignore
 import backpack from "../images/icons/backpack.png";
 // @ts-ignore
@@ -13,8 +14,10 @@ interface Props {
       title: string,
       actions: {
         [key: string]: () => void;
-      }
+      },
+      children?: React.ReactNode
     ): void;
+    goSomeWhere: (place: "house" | "woods") => void;
   };
 }
 
@@ -29,10 +32,25 @@ export default class extends React.Component<Props, State> {
    * @see Modal component and Game component for more details
    */
   openBackPack() {
-    this.props.actions.openModal("Sac a dos", {
-      close: this.props.actions.closeModal
-    });
+    this.props.actions.openModal(
+      "Sac a dos",
+      {
+        close: this.props.actions.closeModal
+      },
+      <Backpack />
+    );
   }
+
+  leave() {
+    this.props.actions.openModal(
+      "Où est-ce qu'on va ?",
+      {
+        close: this.props.actions.closeModal
+      },
+      <Map />
+    );
+  }
+
   render() {
     return (
       <div className={this.props.className}>
@@ -46,11 +64,14 @@ export default class extends React.Component<Props, State> {
             <p className="text-gray-600">un puits sans fond</p>
           </div>
         </button>
-        <button className="flex items-center my-2">
-          <img className="w-10 h-10 mr-4" src={move} alt="sac a dos" />
+        <button
+          onClick={() => this.leave()}
+          className="flex items-center my-2 mt-4"
+        >
+          <img className="w-10 h-10 mr-4" src={move} alt="partir" />
           <div className="text-sm text-left">
             <p className="text-gray-900 leading-none">Partir</p>
-            <p className="text-gray-600">Allez ou vous voulez</p>
+            <p className="text-gray-600">en route pour l'aventure</p>
           </div>
         </button>
       </div>

@@ -1,6 +1,7 @@
 import * as React from "react";
 
 export interface Props {
+  children?: React.ReactNode;
   title: string;
   actions: {
     close: () => void;

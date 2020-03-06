@@ -10,7 +10,7 @@ interface State {
 
 export default class App extends React.Component<Props, State> {
   state: State = {
-    splash_displayed: true
+    splash_displayed: false
   };
 
   startGame() {
