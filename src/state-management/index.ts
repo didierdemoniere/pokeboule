@@ -20,5 +20,3 @@ export const store = createStore(
 );
 
 export type AppState = ReturnType<typeof rootModule.reducer>;
-
-store.subscribe(() => console.log(store.getState()));
