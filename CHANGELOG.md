@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/didierdemoniere/pokeboule/compare/v1.3.1...v1.4.0) (2020-03-06)
+
+
+### Features
+
+* **dialog:** add dialog actions ([3d1c0ef](https://github.com/didierdemoniere/pokeboule/commit/3d1c0eff6ac2c349575a9cba3ee3580f54a378c8))
+* **dialogs + middlewares:** add dialogs and middlewares fetching pokemon + improve state management ([9a149df](https://github.com/didierdemoniere/pokeboule/commit/9a149dfe6d14cce2d8b09813324aa44039ddcf77))
+* **io:** add first I/Os ([e1b6497](https://github.com/didierdemoniere/pokeboule/commit/e1b6497369ea23a094878ac5a1ba99aa6e9ad2a9))
+* **pokemon:** display pokemon on screen ([421dea4](https://github.com/didierdemoniere/pokeboule/commit/421dea4539e4a4cbae6367130cf2051fb608dac2))
+
 ### [1.3.1](https://github.com/didierdemoniere/pokeboule/compare/v1.3.0...v1.3.1) (2020-03-06)
 
 ## [1.3.0](https://github.com/didierdemoniere/pokeboule/compare/v1.2.0...v1.3.0) (2020-03-06)
