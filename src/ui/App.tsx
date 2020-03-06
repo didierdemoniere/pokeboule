@@ -1,6 +1,6 @@
 import * as React from "react";
 import Splash from "./Splash";
-import Game from "./Game";
+import Game from "./Game/index";
 
 interface Props {}
 
