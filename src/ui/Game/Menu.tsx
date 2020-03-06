@@ -57,7 +57,7 @@ export default class extends React.Component<Props, State> {
           onClick={() => this.openBackPack()}
           className="flex items-center my-2"
         >
-          <img className="w-10 h-10 mr-4" src={backpack} alt="sac a dos" />
+          <img className="w-10 h-10 mr-4" src={backpack} alt="sac à dos" />
           <div className="text-sm text-left">
             <p className="text-gray-900 leading-none">Sac à dos</p>
             <p className="text-gray-600">un puits sans fond</p>

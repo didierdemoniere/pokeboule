@@ -73,7 +73,7 @@ export const reducer = function(
     case DIALOG_SUCCESSFUL_CATCH:
       return {
         ...state,
-        content: `Youpiiiii!!! j'ai capturer un ${action.data.name}`,
+        content: `Youpiiiii!!! j'ai capturé un ${action.data.name}`,
         actions: action.actions
       };
     default:
