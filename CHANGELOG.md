@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/didierdemoniere/pokeboule/compare/v1.2.0...v1.3.0) (2020-03-06)
+
+
+### Features
+
+* **modal:** add modal content + compoents Backpack and Map ([f214829](https://github.com/didierdemoniere/pokeboule/commit/f21482979034c6bdeed62c1070527ad2ad4fe0b6))
+
 ## [1.2.0](https://github.com/didierdemoniere/pokeboule/compare/v1.1.0...v1.2.0) (2020-03-06)
 
 
