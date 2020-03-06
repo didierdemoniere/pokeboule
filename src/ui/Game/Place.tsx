@@ -1,4 +1,7 @@
 import * as React from "react";
+import { connect } from "react-redux";
+import { AppState } from "../../state-management";
+
 // @ts-ignore
 import home from "../images/home.png";
 // @ts-ignore
@@ -12,7 +15,7 @@ const backgrounds = {
 };
 
 interface Props {
-  name: string;
+  currentPlace: AppState["currentPlace"];
 }
 
 interface State {}
@@ -21,11 +24,13 @@ interface State {}
  * Display a particular place
  * by showing a background image
  */
-export default class extends React.Component<Props, State> {
+class Place extends React.Component<Props, State> {
   render() {
     return (
       <div
-        style={{ backgroundImage: `url(${backgrounds[this.props.name]})` }}
+        style={{
+          backgroundImage: `url(${backgrounds[this.props.currentPlace]})`
+        }}
         className="full-screen bg-cover"
       >
         {this.props.children}
@@ -33,3 +38,7 @@ export default class extends React.Component<Props, State> {
     );
   }
 }
+
+export default connect((state: AppState) => ({
+  currentPlace: state.currentPlace
+}))(Place);
