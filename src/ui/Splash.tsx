@@ -1,7 +1,7 @@
 import * as React from "react";
 // @ts-ignore
 import logo from "./images/logo.png";
-import Button from "./Button";
+import Button from "./common/Button";
 
 interface Props {
   start: () => void;
@@ -14,7 +14,7 @@ export default class extends React.Component<Props, State> {
     return (
       <div
         id="splash"
-        className="flex flex-col items-center justify-between py-12"
+        className="full-screen flex flex-col items-center justify-between py-12"
       >
         <img id="logo" src={logo} alt="pokeboule" />
 
