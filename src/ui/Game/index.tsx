@@ -11,8 +11,10 @@ interface State {}
 export default class extends React.Component<Props, State> {
   render() {
     return (
-      <div className="full-screen">
-        <Place name="house" />
+      <div>
+        <Place name="house">
+          <h1>hewlcome</h1>
+        </Place>
       </div>
     );
   }

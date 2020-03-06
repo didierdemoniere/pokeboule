@@ -23,7 +23,7 @@ export default class extends React.Component<Props, State> {
     return (
       <div
         style={{ backgroundImage: `url(${backgrounds[this.props.name]})` }}
-        className="bg-cover"
+        className="full-screen bg-cover"
       >
         {this.props.children}
       </div>
