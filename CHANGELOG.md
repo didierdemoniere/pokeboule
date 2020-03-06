@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/didierdemoniere/pokeboule/compare/v1.5.0...v1.5.1) (2020-03-06)
+
+
+### Bug Fixes
+
+* **typo:** fix typos in dialogs and UI ([8fbea32](https://github.com/didierdemoniere/pokeboule/commit/8fbea32e3944110395cade48410c8f3053724d22))
+
 ## [1.5.0](https://github.com/didierdemoniere/pokeboule/compare/v1.4.0...v1.5.0) (2020-03-06)
 
 
