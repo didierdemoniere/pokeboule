@@ -1,0 +1,31 @@
+{
+  "name": "pokeboule",
+  "version": "1.0.0",
+  "description": "pikachu attaque éclair !!!",
+  "scripts": {
+    "commit": "npx git-cz",
+    "dev": "parcel serve src/index.html --open",
+    "build": "parcel build src/index.html --detailed-report 20",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Didier Demoniere",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "autoprefixer": "^9.7.4",
+    "parcel": "^1.12.4",
+    "postcss-modules": "^1.5.0",
+    "postcss-nested": "^4.2.1",
+    "tailwindcss": "^1.2.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
