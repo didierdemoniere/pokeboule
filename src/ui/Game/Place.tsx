@@ -31,7 +31,7 @@ class Place extends React.Component<Props, State> {
         style={{
           backgroundImage: `url(${backgrounds[this.props.currentPlace]})`
         }}
-        className="full-screen bg-cover"
+        className="flex flex-col items-center justify-center full-screen bg-cover"
       >
         {this.props.children}
       </div>

@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import Place from "./Place";
 import Modal from "../common/Modal";
 import { Props as ModalProps } from "../common/Modal";
+import Pokemon from "./Pokemon";
 import Dialog from "./Dialog";
 
 interface Props {}
@@ -61,6 +62,7 @@ export default class extends React.Component<Props, State> {
           ) : (
             <br />
           )}
+          <Pokemon />
           <Dialog />
         </Place>
       </div>
